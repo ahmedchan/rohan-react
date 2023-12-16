@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/ahmedchan/rohan-react/compare/v1.1.1...v1.2.0) (2023-12-16)
+
+
+### Bug Fixes
+
+* remove prettier just for now ([bd461e6](https://github.com/ahmedchan/rohan-react/commit/bd461e67cd0444d97a61c894e900799e095019c8))
+* remove stories just for now, to be continued... ([25f16d5](https://github.com/ahmedchan/rohan-react/commit/25f16d59ff635159936ce7479173286f3b35a8f6))
+
+
+### Features
+
+* added prettier and some other configuration and styling with tailwind ([191b7b7](https://github.com/ahmedchan/rohan-react/commit/191b7b744326149218798062e0cf8d5daf13d393))
+
 ## [1.1.1](https://github.com/ahmedchan/rohan-react/compare/v1.1.0...v1.1.1) (2023-12-16)
 
 
