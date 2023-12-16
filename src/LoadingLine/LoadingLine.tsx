@@ -14,7 +14,7 @@ export const LoadingLine = ({
 }: props) => {
   return (
     <div className={`${position} load-bar top-0 right-0 z-[99999] w-full `}>
-      <div
+      <span
         style={{ height: `${height}px` }}
         className={`animate-loadingbar absolute inline h-full w-0 bg-${variant} rounded-full overflow-hidden`}
       />
