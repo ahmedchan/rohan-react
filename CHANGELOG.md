@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/ahmedchan/rohan-react/compare/v1.1.0...v1.1.1) (2023-12-16)
+
+
+### Bug Fixes
+
+* fix publishing npm ([9620ced](https://github.com/ahmedchan/rohan-react/commit/9620cede0806c9c8c05a8f7c2280ed89d93803e6))
+* fix2 ([76e6ac4](https://github.com/ahmedchan/rohan-react/commit/76e6ac42bfa719f158daf93054a48a447c74a440))
+
 # [1.1.0](https://github.com/ahmedchan/rohan-react/compare/v1.0.0...v1.1.0) (2023-12-16)
 
 
