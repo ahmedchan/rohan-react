@@ -37,7 +37,7 @@
     "trailingComma": "es5"
   },
   "name": "@ahmedsaeed/rohan-react",
-  "author": "“ahmedchan”",
+  "author": "ahmedchan <mr.ahmedsaeed1@gmail.com>",
   "module": "dist/rohan-react.esm.js",
   "size-limit": [
     {
