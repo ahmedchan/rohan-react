@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ahmedchan/rohan-react/compare/v1.0.0...v1.1.0) (2023-12-16)
+
+
+### Features
+
+* added some extra components ([b255d47](https://github.com/ahmedchan/rohan-react/commit/b255d47d5401746663623d5dddd779eeb6e9fe64))
+
 # 1.0.0 (2023-12-16)
 
 
