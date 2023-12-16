@@ -181,4 +181,4 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
   )
 }
 
-export const ButtonRef = React.forwardRef(Button)
+export default React.forwardRef(Button)

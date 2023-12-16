@@ -141,6 +141,4 @@ const IconButton: React.ForwardRefRenderFunction<HTMLButtonElement, Props> = (
   )
 }
 
-export const IconButtonRef = React.forwardRef(IconButton)
-
-// export default React.forwardRef(IconButton)
+export default React.forwardRef(IconButton)
