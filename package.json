@@ -19,9 +19,9 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/style.css --minify"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build-tailwind": "npx tailwindcss -o ./dist/style.css --minify"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -32,10 +32,14 @@
     }
   },
   "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
+    "singleQuote": false,
+    "printWidth": 200,
+    "proseWrap": "always",
+    "tabWidth": 3,
+    "useTabs": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "semi": false
   },
   "name": "@ahmedsaeed/rohan-react",
   "author": "ahmedchan <mr.ahmedsaeed1@gmail.com>",
@@ -52,19 +56,28 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
     "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
     "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.5",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
     "@size-limit/preset-small-lib": "^11.0.1",
     "@storybook/addon-essentials": "^7.6.4",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^7.6.4",
+    "@storybook/addon-styling": "^1.3.7",
+    "@storybook/addon-themes": "^7.6.5",
     "@storybook/addons": "^7.6.4",
     "@storybook/react": "^7.6.4",
+    "@storybook/react-webpack5": "^7.6.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.17",
     "autoprefixer": "^10.4.16",
     "babel-loader": "^9.1.3",
-    "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
@@ -72,6 +85,7 @@
     "react-is": "^18.2.0",
     "semantic-release": "^22.0.12",
     "size-limit": "^11.0.1",
+    "storybook": "^7.6.5",
     "tailwind-merge": "^2.1.0",
     "tailwindcss": "^3.3.6",
     "tsdx": "^0.14.1",
@@ -96,10 +110,6 @@
     "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-separator": "^1.0.3",
-    "@semantic-release/commit-analyzer": "^11.1.0",
-    "@semantic-release/github": "^9.2.5",
-    "@semantic-release/npm": "^11.0.2",
-    "@semantic-release/release-notes-generator": "^12.1.0",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.16"
   }
