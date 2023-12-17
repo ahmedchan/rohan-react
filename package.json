@@ -1,116 +1,119 @@
 {
-  "version": "1.2.1",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build && yarn build-tailwind",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
-    "commit": "git-cz",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build-tailwind": "npx tailwindcss -o ./dist/style.css --minify"
-  },
-  "peerDependencies": {
-    "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "singleQuote": false,
-    "printWidth": 200,
-    "proseWrap": "always",
-    "tabWidth": 3,
-    "useTabs": false,
-    "trailingComma": "none",
-    "bracketSpacing": true,
-    "semi": false
-  },
-  "name": "@ahmedsaeed/rohan-react",
-  "author": "ahmedchan <mr.ahmedsaeed1@gmail.com>",
-  "module": "dist/rohan-react.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/rohan-react.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/rohan-react.esm.js",
-      "limit": "10 KB"
-    }
-  ],
-  "devDependencies": {
-    "@babel/core": "^7.23.6",
-    "@babel/preset-env": "^7.23.6",
-    "@babel/preset-react": "^7.23.3",
-    "@babel/preset-typescript": "^7.23.3",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^11.1.0",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.2.5",
-    "@semantic-release/npm": "^11.0.2",
-    "@semantic-release/release-notes-generator": "^12.1.0",
-    "@size-limit/preset-small-lib": "^11.0.1",
-    "@storybook/addon-essentials": "^7.6.4",
-    "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^7.6.4",
-    "@storybook/addon-styling": "^1.3.7",
-    "@storybook/addon-themes": "^7.6.5",
-    "@storybook/addons": "^7.6.4",
-    "@storybook/react": "^7.6.4",
-    "@storybook/react-webpack5": "^7.6.5",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.17",
-    "autoprefixer": "^10.4.16",
-    "babel-loader": "^9.1.3",
-    "husky": "^8.0.3",
-    "postcss": "^8.4.32",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
-    "semantic-release": "^22.0.12",
-    "size-limit": "^11.0.1",
-    "storybook": "^7.6.5",
-    "tailwind-merge": "^2.1.0",
-    "tailwindcss": "^3.3.6",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ahmedchan/rohan-react.git"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "dependencies": {
-    "@radix-ui/react-alert-dialog": "^1.0.5",
-    "@radix-ui/react-avatar": "^1.0.4",
-    "@radix-ui/react-dialog": "^1.0.5",
-    "@radix-ui/react-dropdown-menu": "^2.0.6",
-    "@radix-ui/react-hover-card": "^1.0.7",
-    "@radix-ui/react-popover": "^1.0.7",
-    "@radix-ui/react-scroll-area": "^1.0.5",
-    "@radix-ui/react-separator": "^1.0.3",
-    "classnames": "^2.3.2",
-    "framer-motion": "^10.16.16"
-  }
+   "version": "1.2.0",
+   "license": "MIT",
+   "main": "dist/index.js",
+   "typings": "dist/index.d.ts",
+   "files": [
+      "dist",
+      "src"
+   ],
+   "engines": {
+      "node": ">=10"
+   },
+   "scripts": {
+      "start": "tsdx watch",
+      "build": "tsdx build && yarn run build-tailwind",
+      "test": "tsdx test --passWithNoTests",
+      "lint": "tsdx lint",
+      "commit": "git-cz",
+      "prepare": "tsdx build",
+      "size": "size-limit",
+      "analyze": "size-limit --why",
+      "storybook": "concurrently yarn:watch:*",
+      "watch:storybook": "storybook dev -p 6006",
+      "build-storybook": "storybook build",
+      "build-tailwind": "npx tailwindcss -i ./styles/tailwind-input.css -o ./styles/style.css --minify",
+      "watch:tailwind": "npx tailwindcss -i ./styles/tailwind-input.css -o ./styles/tailwind-output.css --watch"
+   },
+   "peerDependencies": {
+      "react": ">=16"
+   },
+   "husky": {
+      "hooks": {
+         "pre-commit": "tsdx lint"
+      }
+   },
+   "prettier": {
+      "singleQuote": false,
+      "printWidth": 200,
+      "proseWrap": "always",
+      "tabWidth": 3,
+      "useTabs": false,
+      "trailingComma": "none",
+      "bracketSpacing": true,
+      "semi": false
+   },
+   "name": "@ahmedsaeed/rohan-react",
+   "author": "ahmedchan <mr.ahmedsaeed1@gmail.com>",
+   "module": "dist/rohan-react.esm.js",
+   "size-limit": [
+      {
+         "path": "dist/rohan-react.cjs.production.min.js",
+         "limit": "10 KB"
+      },
+      {
+         "path": "dist/rohan-react.esm.js",
+         "limit": "10 KB"
+      }
+   ],
+   "devDependencies": {
+      "@babel/core": "^7.23.6",
+      "@babel/preset-env": "^7.23.6",
+      "@babel/preset-react": "^7.23.3",
+      "@babel/preset-typescript": "^7.23.3",
+      "@semantic-release/changelog": "^6.0.3",
+      "@semantic-release/commit-analyzer": "^11.1.0",
+      "@semantic-release/git": "^10.0.1",
+      "@semantic-release/github": "^9.2.5",
+      "@semantic-release/npm": "^11.0.2",
+      "@semantic-release/release-notes-generator": "^12.1.0",
+      "@size-limit/preset-small-lib": "^11.0.1",
+      "@storybook/addon-essentials": "^7.6.4",
+      "@storybook/addon-info": "^5.3.21",
+      "@storybook/addon-links": "^7.6.4",
+      "@storybook/addon-styling": "^1.3.7",
+      "@storybook/addon-themes": "^7.6.5",
+      "@storybook/addons": "^7.6.4",
+      "@storybook/react": "^7.6.4",
+      "@storybook/react-webpack5": "^7.6.5",
+      "@types/react": "^18.2.45",
+      "@types/react-dom": "^18.2.17",
+      "autoprefixer": "^10.4.16",
+      "babel-loader": "^9.1.3",
+      "concurrently": "^8.2.2",
+      "husky": "^8.0.3",
+      "postcss": "^8.4.32",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-is": "^18.2.0",
+      "semantic-release": "^22.0.12",
+      "size-limit": "^11.0.1",
+      "storybook": "^7.6.5",
+      "tailwind-merge": "^2.1.0",
+      "tailwindcss": "^3.3.6",
+      "tsdx": "^0.14.1",
+      "tslib": "^2.6.2",
+      "typescript": "^5.3.3"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/ahmedchan/rohan-react.git"
+   },
+   "config": {
+      "commitizen": {
+         "path": "./node_modules/cz-conventional-changelog"
+      }
+   },
+   "dependencies": {
+      "@radix-ui/react-alert-dialog": "^1.0.5",
+      "@radix-ui/react-avatar": "^1.0.4",
+      "@radix-ui/react-dialog": "^1.0.5",
+      "@radix-ui/react-dropdown-menu": "^2.0.6",
+      "@radix-ui/react-hover-card": "^1.0.7",
+      "@radix-ui/react-popover": "^1.0.7",
+      "@radix-ui/react-scroll-area": "^1.0.5",
+      "@radix-ui/react-separator": "^1.0.3",
+      "classnames": "^2.3.2",
+      "framer-motion": "^10.16.16"
+   }
 }
