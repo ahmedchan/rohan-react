@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/ahmedchan/rohan-react/compare/v1.2.4...v1.2.5) (2023-12-17)
+
+
+### Bug Fixes
+
+* fix tailwind styles ([6833e12](https://github.com/ahmedchan/rohan-react/commit/6833e12db03e7c6c34ef89d906e7188199cc4840))
+
 ## [1.2.4](https://github.com/ahmedchan/rohan-react/compare/v1.2.3...v1.2.4) (2023-12-17)
 
 
