@@ -22,8 +22,8 @@
       "storybook": "concurrently yarn:watch:*",
       "watch:storybook": "storybook dev -p 6006",
       "build-storybook": "storybook build",
-      "build-tailwind": "npx tailwindcss build ./styles/tailwind-input.css -o ./dist/styles/style.css --minify",
-      "watch:tailwind": "npx tailwindcss -i ./styles/tailwind-input.css -o ./styles/tailwind-output.css --watch"
+      "build-tailwind": "npx tailwindcss build ./src/tailwind-input.css -o ./dist/style.css --minify",
+      "watch:tailwind": "npx tailwindcss -i ./src/tailwind-input.css -o ./src/tailwind-output.css --watch"
    },
    "peerDependencies": {
       "react": ">=16"

@@ -3,7 +3,7 @@ import { withThemeByDataAttribute } from "@storybook/addon-themes"
 import { withThemeByClassName } from "@storybook/addon-styling"
 
 /* TODO: update import to your tailwind styles file. If you're using Angular, inject this through your angular.json config instead */
-import "../styles/tailwind-output.css"
+import "../src/tailwind-output.css"
 
 // https://storybook.js.org/docs/react/writing-stories/parameters#global-parameters
 export const parameters = {
