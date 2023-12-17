@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/ahmedchan/rohan-react/compare/v1.2.3...v1.2.4) (2023-12-17)
+
+
+### Bug Fixes
+
+* fix tailwind build2 ([d216956](https://github.com/ahmedchan/rohan-react/commit/d2169564df620f9bdafe596a6c13fbc985955d2e))
+
 ## [1.2.3](https://github.com/ahmedchan/rohan-react/compare/v1.2.2...v1.2.3) (2023-12-17)
 
 
