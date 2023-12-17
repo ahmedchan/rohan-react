@@ -22,7 +22,7 @@
       "storybook": "concurrently yarn:watch:*",
       "watch:storybook": "storybook dev -p 6006",
       "build-storybook": "storybook build",
-      "build-tailwind": "npx tailwindcss -i ./styles/tailwind-input.css -o ./dist/styles/style.css --minify",
+      "build-tailwind": "npx tailwindcss build ./styles/tailwind-input.css -o ./dist/styles/style.css --minify",
       "watch:tailwind": "npx tailwindcss -i ./styles/tailwind-input.css -o ./styles/tailwind-output.css --watch"
    },
    "peerDependencies": {
