@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ahmedchan/rohan-react/compare/v1.2.0...v1.2.1) (2023-12-17)
+
+
+### Bug Fixes
+
+* fixing storybook ([0b03762](https://github.com/ahmedchan/rohan-react/commit/0b03762814e7b29d3620b07504ea526a013fded7))
+
 # [1.2.0](https://github.com/ahmedchan/rohan-react/compare/v1.1.1...v1.2.0) (2023-12-16)
 
 
